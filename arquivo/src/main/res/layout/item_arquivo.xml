@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <data>
+        <import type="android.view.View" />
+         <variable
+            name="item"
+            type="br.gov.rj.arquivo.api.arquivo.Arquivo"/>
+    </data>
+
+<LinearLayout
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="8dp"
+    android:layout_margin="8dp">
+
+    <android.support.v7.widget.AppCompatImageView
+        android:id="@+id/imagem_arquivo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/ic_picture_as_pdf_black_24dp"/>
+
+
+    <TextView
+        android:id="@+id/nome_arquivo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@{item.nomeArquivo}"
+        tools:text="BolPm12_12_12.pdf"/>
+
+        <TextView
+            android:id="@+id/data_arquivo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@{item.dataArquivo}"
+            tools:text="10:20" />
+
+    <TextView
+        android:id="@+id/tamanho_arquivo"
+        android:textSize="12sp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@{item.filesize}"
+        tools:text="Esta é uma descrição da ocorrência que foi relatado como um exemplo de visualização"
+        android:maxLines="3"/>
+
+
+</LinearLayout>
+
+</layout>

@@ -1,0 +1,107 @@
+apply plugin: 'com.android.application'
+
+android {
+    compileSdkVersion 28
+
+    defaultConfig {
+        applicationId "br.gov.rj.arquivo"
+        minSdkVersion 23
+        targetSdkVersion 28
+        versionCode 1
+        versionName "1.0"
+        testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
+    }
+
+    dataBinding {
+        enabled = true
+    }
+
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }
+    }
+
+    compileOptions {
+        sourceCompatibility = '1.8'
+        targetCompatibility = '1.8'
+    }
+
+    configurations.all {
+        resolutionStrategy.force 'com.google.code.findbugs:jsr305:1.3.9'
+    }
+}
+
+dependencies {
+    def room_version = "1.1.1"
+    implementation fileTree(include: ['*.jar'], dir: 'libs')
+
+    // Navigation
+    implementation "android.arch.navigation:navigation-fragment:1.0.0-alpha07"
+    implementation "android.arch.navigation:navigation-ui:1.0.0-alpha07"
+
+    // Support
+    implementation 'com.android.support:support-v4:28.0.0'
+    implementation 'com.android.support:appcompat-v7:28.0.0'
+    implementation 'com.android.support.constraint:constraint-layout:1.1.3'
+    implementation 'com.android.support:design:28.0.0'
+    implementation 'com.android.support:cardview-v7:28.0.0'
+
+    implementation 'de.hdodenhof:circleimageview:2.2.0'
+
+    implementation 'com.github.bumptech.glide:glide:4.8.0'
+
+    implementation 'com.daimajia.easing:library:2.0@aar'
+    implementation 'com.daimajia.androidanimations:library:2.3@aar'
+
+    // Spinner
+    implementation 'com.toptoche.searchablespinner:searchablespinnerlibrary:1.3.1'
+
+    implementation 'android.arch.persistence.room:runtime:1.1.1'
+    implementation 'android.arch.lifecycle:extensions:1.1.1'
+    annotationProcessor "android.arch.persistence.room:compiler:1.1.1"
+
+    // Debug DB
+    debugImplementation 'com.amitshekhar.android:debug-db:1.0.4'
+
+    // DB Assets
+    // implementation 'com.github.humazed:RoomAsset:1.0.3'
+    testImplementation 'junit:junit:4.12'
+
+    // Maps
+//    implementation 'com.google.android.gms:play-services-maps:16.0.0'
+//    implementation 'com.google.android.gms:play-services-location:16.0.0'
+
+    //
+    implementation 'com.android.support:recyclerview-v7:28.0.0'
+
+    // Intercepor
+    implementation 'com.squareup.okhttp3:logging-interceptor:3.12.0'
+
+// https://github.com/ReactiveX/RxAndroid
+    implementation 'io.reactivex.rxjava2:rxandroid:2.1.0'
+    implementation 'io.reactivex.rxjava2:rxjava:2.2.0'
+
+    // Retrofit
+    implementation 'com.squareup.retrofit2:retrofit:2.5.0'
+    implementation 'com.squareup.retrofit2:adapter-rxjava:2.4.0'
+    implementation 'com.squareup.retrofit2:converter-gson:2.4.0'
+    implementation 'com.jakewharton.retrofit:retrofit2-rxjava2-adapter:1.0.0'
+
+    // GSON body parser
+    implementation 'com.google.code.gson:gson:2.8.5'
+    implementation 'org.apache.commons:commons-lang3:3.2.1'
+
+    // Dependency Injection
+    // implementation 'com.google.dagger:dagger:2.16' (não usado)
+    implementation 'com.google.dagger:dagger-android:2.15'
+    implementation 'com.google.dagger:dagger-android-support:2.15'
+    annotationProcessor 'com.google.dagger:dagger-android-processor:2.16'
+    annotationProcessor 'com.google.dagger:dagger-compiler:2.15'
+
+    // Firebase
+    //implementation 'com.google.firebase:firebase-core:16.0.5'
+}
+
+

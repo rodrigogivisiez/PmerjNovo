@@ -1,0 +1,60 @@
+<resources>
+    <string name="app_name">Arquivo</string>
+
+<string name="recuperarsenha">Esqueceu a senha?</string>
+<string name="verificandoSenha">Verificando Senha</string>
+<string name="localizandoUsuario">Localizando Usuario</string>
+<string name="usuarioLocalizado">Usuário Localizado com Sucesso</string>
+<string name="senha_incorreta">Senha Incorreta</string>
+<string name="login_efetuado">Login Efetuado com Sucesso!</string>
+<string name="usuario_incorreto">Usuário Incorreto</string>
+<string name="title_activity_main"> MOBILE</string>
+
+<string name="navigation_drawer_open">Open navigation drawer</string>
+<string name="navigation_drawer_close">Close navigation drawer</string>
+
+<string name="action_settings">Settings</string>
+<string name="action_logout">Logout</string>
+
+<string name="hello_blank_fragment">Marque as opções presentes na ocorrência </string>
+<string name="titulo_notificacao">Informe sua Alteração</string>
+<string name="msgnogps">Seu GPS encontra-se desativado, Gostaria de Ativá-lo?</string>
+<string name="sim">Sim</string>
+<string name="nao">Não</string>
+<string name="info_cel">Informações do Dispositivo</string>
+<string name="title_activity_bopm">BopmActivity</string>
+<string name="numero_bopm">Número do BOPM:</string>
+<string name="perg_envolvidos">Envolvidos</string>
+<string name="ex_perg_envolvidos">(Ex:Vítimas,Acusados,Testemunhas etc...)</string>
+<string name="natureza_ocorrencia">Natureza da Ocorrência</string>
+<string name="titulo_item_local_fato">Local do Fato</string>
+<string name="titulo_item_data_hora_fato">Data e Hora</string>
+<string name="titulo_ficha_inicial">Ficha Inicial</string>
+<string name="confirmaCriacaodeEnvolvidos">O Usuário Confirma a Criação de um novo envolvido na ocorrência?</string>
+<string name="sexo">Sexo</string>
+<string name="title_activity_redefinir_senha">RedefinirSenhaActivity</string>
+<string name="voltar">Voltar</string>
+<string name="google_api_id">11111111111111</string>
+<string name="title_activity_loginn">LoginnActivity</string>
+<string name="cpf">Cpf</string>
+<string name="fazer_login">Login</string>
+<string name="email">email@example.com</string>
+<string name="enviar_senha">Enviar codigo para meu email</string>
+<string name="Senha">password</string>
+<string name="login_esqueceu_senha">1º acesso? \n Esqueceu a senha? </string>
+<string name="todo">TODO</string>
+<string name="empty_task_message">empty_task_message</string>
+<string name="erro">Ocorreu um erro! Tente novamente.</string>
+<string name="usuario_senha_incorreto">Usuário ou senha incorreto!</string>
+<string name="email_nao_localizado">Email não localizado!</string>
+<string name="email_enviado_sucesso">Email enviado com sucesso!</string>
+<string name="token">Token</string>
+<string name="senha">senha</string>
+<string name="confirma_senha">Confirma senha</string>
+<string name="resetar_senha">Resetar a senha</string>
+<string name="password">Senha</string>
+<string name="ja_possui_codigo">Já possui código ?</string>
+<string name="senha_resetada_sucesso">Senha resetada com sucesso!</string>
+<string name="title_activity_maps">Map</string>
+
+</resources>

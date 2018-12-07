@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_menu_graph.xml"
+    app:startDestination="@id/loginFragment">
+
+    <fragment
+        android:id="@+id/loginFragment"
+        android:name="br.gov.rj.arquivo.ui.login.LoginFragment"
+        android:label="LoginFragment" >
+        <action
+            android:id="@+id/action_loginFragment_to_redefinirFragment"
+            app:destination="@id/redefinirFragment" />
+        <action
+            android:id="@+id/action_loginFragment_to_resetFragment"
+            app:destination="@id/resetFragment" />
+        <action
+            android:id="@+id/action_loginFragment_to_devMenuFragment"
+            app:destination="@id/devMenuFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/redefinirFragment"
+        android:name="br.gov.rj.arquivo.ui.login.RedefinirFragment"
+        android:label="RedefinirFragment" >
+        <action
+            android:id="@+id/action_redefinirFragment_to_resetFragment"
+            app:destination="@id/resetFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/resetFragment"
+        android:name="br.gov.rj.arquivo.ui.login.ResetFragment"
+        android:label="ResetFragment" />
+    <fragment
+        android:id="@+id/devMenuFragment"
+        android:name="br.gov.rj.arquivo.ui.menu.DevMenuFragment"
+        android:label="DevMenuFragment" >
+        <action
+            android:id="@+id/action_devMenuFragment_to_arquivoFragment"
+            app:destination="@id/arquivoFragment" />
+        <action
+            android:id="@+id/action_devMenuFragment_to_monitorFragment"
+            app:destination="@id/monitorFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/arquivoFragment"
+        android:name="br.gov.rj.arquivo.ui.arquivo.ArquivoFragment"
+        android:label="arquivo_fragment"
+        tools:layout="@layout/arquivo_fragment" />
+    <fragment
+        android:id="@+id/monitorFragment"
+        android:name="br.gov.rj.arquivo.ui.monitor.MonitorFragment"
+        android:label="monitor_fragment"
+        tools:layout="@layout/monitor_fragment" />
+</navigation>
